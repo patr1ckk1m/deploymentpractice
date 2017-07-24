@@ -1,0 +1,14 @@
+<h1>Login Component</h1>
+<form (submit) = "register()">
+  <!--define this register method in login.component.ts-->
+
+  <!--create a user class (ng g class user)-->
+  <!--import the user class into login.component.ts-->
+  <label>USERNAME</label>
+  <input type = "text" [(ngModel)] = "user.username" name = "username">
+  <label>PASSWORD</label>
+  <input type = "text" [(ngModel)] = "user.password" name = "password">
+  <input type = "submit" value= "register or login">
+  </form>
+  <!--create a service to handle sending data (ng g service User)-->
+  <!--service is created but we have to update the app.module.ts file-->
